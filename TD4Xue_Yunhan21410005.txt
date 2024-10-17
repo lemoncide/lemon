@@ -1,0 +1,44 @@
+#http://xpather.com/
+
+Q1/albums/album/titre
+    //titre
+
+Q2/albums/album/date
+    //date
+
+Q3/albums/album[auteur="Hergé"]
+     //album[auteur="Hergé"]
+
+Q4On a marché sur la lune
+
+Q5/albums/album[date/annee = "1954"]/titre
+
+Q6/albums/album[titre = "Le Devin"]
+
+Q7/albums/album[titre="Astérix aux Jeux Olympiques"]
+
+Q8//album[titre="Astérix aux Jeux Olympiques"]
+
+Q9/albums/album[@serie= "Astérix"]
+
+Q10/albums/album[@serie= "Astérix"]/date[annee=1970]
+
+Q11/albums/album[@serie= "Astérix"]/date[annee <1970]
+
+Q12/albums/album[@serie= "Astérix"]/date[annee <=1970]
+
+Q13//album[@serie="Tintin" and @numero=7]
+
+Q14/albums/album[titre= "Objectif Lune"]
+
+Q15/albums/album[titre= "Objectif Lune"]/following-sibling::album[1]
+
+Q16count(//album[@serie="Tintin"])
+
+Q17/albums/album[not(date)]
+
+Q18/albums/album[not(date/mois)]
+
+Q19/albums/album[contains(titre,"la")]
+
+Q20//album[starts-with(titre, 'Astérix')]/titre
